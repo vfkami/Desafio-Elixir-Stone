@@ -1,12 +1,11 @@
 # written by Vinicius Queiroz
 import math
 
-emails = ['luffy@email.com','zoro@email.com',
-          'sanji@email.com','nami@email.com',
-          'chopper@email.com', 'usopp@email.com']
+# define email list
+emails = []
 
 # define shopping list
-shoppinglist = [['apple', 1, 100]]
+shoppinglist = []
 
 # verify if list or items are not null or empty
 if len(emails) <= 0 or len(shoppinglist) <= 0:
@@ -45,5 +44,9 @@ for i in range(len(emails)):
 ## create dictionary
 dic = dict(zip(emails, value_by_email))
 
-for d in dic:
-    print(d, ',', dic[d])
+# print one element of dictionary
+print(dic['example@email.com'])
+
+# uncomment to print all dictionary: 
+# for d in dic:
+#    print(d, ',', dic[d])
